@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="stylesheet" href="login.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -17,19 +19,26 @@
 <body>
     <div class="container">
         <h1> Login </h1>
-        <form class="was-validated">
-            <div>
+        <form>
+            <!-- Email -->
+            <div class="form-group">
                 <label for="email"> Email: </label>
-                <input type="text" class="form-control" id="email" placeholder="Email" name="email" required>
-                <div class="valid-feedback"></div>
+                <input type="email" class="form-control" id="email" placeholder="abc@mail.com" name="email" required>
+                
             </div>
 
-            <div>
+            <!-- Password -->
+            <div class="form-group">
                 <label for="password"> Password: </label>
-                <input type="text" class="form-control" id="password" placeholder="password" name="password" required>
-                <div class="valid-feedback"></div>
+                <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+              
             </div>
-
+            <br>
+            <div id="loginOption">
+                <a href="../SignUp/signup.html" id="signUpLink"> Don't have an account? </a>
+                <button type="login" class="btn btn-primary"> Login </button>
+            </div>
+            
         </form>
 
     </div>
