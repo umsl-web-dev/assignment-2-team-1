@@ -1,37 +1,53 @@
+let users = [];
 let input = [];
+let clear = document.getElementsByClassName("uname, email, password");
 
 onSubmit = () => {
     let username = document.getElementById("uname").value;
-    if (username === "") {
+    if (username === "" || null) {
         username = "Anonymous";
     }
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
 
-    input = [username, email, password];
-
-    // if (input === obj) {
-    //     alert("An account already exists.");
-    //     //reload the page
-    // } else {
-    const userObj = {
+    const inputObj =
+    {
         username: username,
         email: email,
         password: password
     };
-    let myJSON = JSON.stringify(userObj);
-    localStorage.setItem("testJSON", myJSON);
+    const userObj =
+    {
+        username: username,
+        email: email,
+        password: password
+    };
+    saveToLocalStorage(userObj);
+    console.log(inputObj);
 
-    // Retrieving data:
-    text = localStorage.getItem("testJSON");
-    obj = JSON.parse(text);
-
-    console.log(obj);
-   
-    //Say thank you we are processing you information + make a loading thingy next to the login button for a few seconds
-    //Redirect to the Home page so user can login 
-    // }
 };
+
+saveToLocalStorage = userStorage => {
+    users.push(userStorage);
+    localStorage.setItem("users", JSON.stringify(users));
+
+
+};
+
+window.onload = () => {
+    if (localStorage.getItem("users") !== null) {
+        text = localStorage.getItem("users");
+        obj = JSON.parse(text);
+
+    }
+};
+
+
+//If inputObj is equal to an userObj, then go to the login page
+
+
+
+
 
 
 
