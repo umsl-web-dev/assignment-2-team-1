@@ -4,6 +4,9 @@ let users = [];
 onSubmit = () => {
   let user= true;
   let password = document.getElementById("password").value;
+  if (password === "" || null) {
+    alert("Invalid password.");
+  }
   let username = document.getElementById("uname").value;
   if (username === "" || null) {
     username = "Anonymous";
@@ -16,10 +19,8 @@ onSubmit = () => {
   }
   if (validateEmailAddress(email) != true) {
     alert("Email is invalid.");
-    // console.log("Before clear:::::", user, email);
     user = false;
     clearInput(email, password, username, user);
-    // console.log("After clear:::::", user, email);
   }
 
   if (user== true) {
@@ -61,6 +62,6 @@ localStorage.setItem("users", JSON.stringify(users));
 
 //Goes to the login page
 nextPage = () => {
-  //I want to create a hidden link that is clicked through HTML and navigates to the Login Page
 console.log("This is the nextPage");
+window.location.href = '../Home/login.html'
 };
