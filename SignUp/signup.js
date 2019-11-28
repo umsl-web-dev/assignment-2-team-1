@@ -1,5 +1,5 @@
+//PROBLEM WITH THIS CODE
 let users = [];
-// let clear = document.getElementsByClassName("uname, email, password");
 
 onSubmit = () => {
   let user= true;
