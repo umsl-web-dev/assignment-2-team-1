@@ -32,6 +32,7 @@ onSubmit = () => {
   };
   saveToLocalStorage(userObj);
   clearInput(email, password, username, user);
+  alert("Successful!");
   nextPage();
   }
 };
