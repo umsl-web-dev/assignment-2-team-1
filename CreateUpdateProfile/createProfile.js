@@ -6,22 +6,47 @@ editUserBtn = () => {
 
 saveBtn = () => {
   //Directions: pushes (updateUser method) all update information to local storage
+  
+  //console.log(obj[0].username)
+  let user = true;
   let party = document.getElementById("party").value;
+  if (party=="") {
+    user=false;
+  }
   let age = document.getElementById("age").value;
+  if (age == "") {
+    user=false;
+  }
   let address = document.getElementById("address").value;
+  if (address == "") {
+    user = false;
+  }
   let zipCode = document.getElementById("zip").value;
+  //I dont know why this is not being read, if the logic is correct
+  if (zipCode.length !==5 || zipCode == "") {
+    zipCode = document.getElementById("zip").value="";
+    alert ("try that again");
+    user = false;
+  }
   let state = document.getElementById("state").value;
+  if (state == "") {
+    user=false;
+  }
 
   const userObj2 = {
     partyAffil: party,
     age: age,
     address: address,
     zipCode: zipCode,
-    state: state
+    state: state,
+    user: user
   };
-  
+  console.log("userObj2::::" , userObj2.user);
+ 
   saveToLocalStorage(userObj2);
-  nextPageCreateFeed();
+  // changeUsername();
+  //disable fields
+  // nextPageCreateFeed();
 };
 
 saveToLocalStorage = userStorage => {
@@ -31,25 +56,13 @@ saveToLocalStorage = userStorage => {
 
 window.onload = () => {
   //Existing user
-  if (localStorage.getItem("usersProfile") !== null) {
-    text = localStorage.getItem("usersProfile");
+  // changeUsername();
+  if (localStorage.getItem("users") !== null) {
+    text = localStorage.getItem("users");
     obj = JSON.parse(text);
+    changeUsername(obj[0].username);
   }
-};
-
-updateUser = () => {
-  //Directions: updates user information in local storage
-};
-
-deleteUser = () => {
-  //Directions: deletes information on the user in local storage
-};
-
-renderUser = () => {
-  // for (userStorage of users) {
-  //   x.appendChild(name);
-  //   console.log("name::::: ", x);
-  // }
+  
 };
 
 //Goes to the login page
@@ -58,3 +71,7 @@ nextPageCreateFeed = () => {
   window.location.href = '../Feed/feed.html'
   };
   
+changeUsername = () => {
+usernameChange = obj[0].username;
+document.getElementById("nameLabel").innerHTML=usernameChange;
+};
