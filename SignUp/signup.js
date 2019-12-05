@@ -2,6 +2,7 @@
 let users = [];
 
 onSubmit = () => {
+  // let loggedIn = false;
   let user= true;
   let password = document.getElementById("password").value;
   if (password === "" || null) {
@@ -31,13 +32,13 @@ onSubmit = () => {
     user: true
   };
   saveToLocalStorage(userObj);
-  clearInput(email, password, username, user);
+  clearInput(email, password, username);
   alert("Successful!");
   nextPage();
   }
 };
 
-saveToLocalStorage = userStorage => {
+let saveToLocalStorage = userStorage => {
   users.push(userStorage);
   localStorage.setItem("users", JSON.stringify(users));
 };
@@ -54,6 +55,8 @@ let unameClear= document.getElementById("uname").value= "";
 let passwordClear= document.getElementById("password").value = "";
 let emailClear= document.getElementById("email").value = "";
 let userClear=false;
+// let loggedInClear=false;
+// loggedIn=loggedInClear;
 user= userClear;
 username = unameClear;
 password = passwordClear;

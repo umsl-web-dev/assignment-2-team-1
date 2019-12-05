@@ -6,8 +6,6 @@ editUserBtn = () => {
 
 saveBtn = () => {
   //Directions: pushes (updateUser method) all update information to local storage
-  
-  //console.log(obj[0].username)
   let user = true;
   let party = document.getElementById("party").value;
   if (party=="") {
@@ -44,9 +42,8 @@ saveBtn = () => {
   console.log("userObj2::::" , userObj2.user);
  
   saveToLocalStorage(userObj2);
-  // changeUsername();
   //disable fields
-  // nextPageCreateFeed();
+  nextPageCreateFeed();
 };
 
 saveToLocalStorage = userStorage => {
@@ -56,7 +53,6 @@ saveToLocalStorage = userStorage => {
 
 window.onload = () => {
   //Existing user
-  // changeUsername();
   if (localStorage.getItem("users") !== null) {
     text = localStorage.getItem("users");
     obj = JSON.parse(text);
@@ -65,7 +61,7 @@ window.onload = () => {
   
 };
 
-//Goes to the login page
+//Goes to the feed page--> Alex's Page
 nextPageCreateFeed = () => {
   console.log("This is the nextPage");
   window.location.href = '../Feed/feed.html'
@@ -75,3 +71,12 @@ changeUsername = () => {
 usernameChange = obj[0].username;
 document.getElementById("nameLabel").innerHTML=usernameChange;
 };
+
+// function openNav() {
+//   document.getElementById("myNav").style.height = "100%";
+// }
+
+// /* Close */
+// function closeNav() {
+//   document.getElementById("myNav").style.height = "0%";
+// }
