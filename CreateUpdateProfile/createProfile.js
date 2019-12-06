@@ -72,6 +72,10 @@ usernameChange = obj[0].username;
 document.getElementById("nameLabel").innerHTML=usernameChange;
 };
 
+logoutBtn = () => {
+  window.location.href = '../Home/login.html';
+};
+
 // function openNav() {
 //   document.getElementById("myNav").style.height = "100%";
 // }

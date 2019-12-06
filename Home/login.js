@@ -1,11 +1,19 @@
+loggedInArr=[];
 onLogin = () => {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
-  
+  let loggedIn=false;
   let elementEmail = obj[0].email;
   let elementPassword = obj[0].password;
 
-  if (email == elementEmail && password == elementPassword) {
+  if (email == elementEmail && password == elementPassword && loggedIn == false) {
+    loggedInProfiles = {
+      loggedIn: true,
+      email: elementEmail,
+      password: elementEmail
+    }
+    
+    saveToLocalStorage(loggedInProfiles);
     nextPageCreate();
     clearField();
   } else {
@@ -23,8 +31,8 @@ window.onload = () => {
 };
 
 saveToLocalStorage = userStorage => {
-  users.push(loggedIn);
-  localStorage.setItem("users", JSON.stringify(users));
+  loggedInArr.push(userStorage);
+  localStorage.setItem("loggedInProfiles", JSON.stringify(loggedInArr));
 };
 
 nextPageCreate = () => {
