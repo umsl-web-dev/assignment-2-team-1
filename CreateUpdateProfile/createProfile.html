@@ -16,42 +16,49 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: orangered;">
         <!-- row 1 -->
-        <div class="row" style="background-color: red;">
-            <div class="col-11">11</div>
-            <div class="col-1">
-                <button type= "button" onclick="logoutBtn()"> Logout </button>
+        <div class="row" >
+            <div class="col">
+                <button class="float-right" type= "button" onclick="logoutBtn()"> Logout </button>
             </div>
         </div>
         <!-- row 2 -->
-        <div class="row" style="background-color: blue;">
+        <!-- <div class="row" style="background-color: blue;">
             <div class="col-2">2</div>
             <div class="col-8">8</div>
             <div class="col-2">2</div>
-        </div>
+        </div> -->
         <!-- row 3 -->
         <div class="row" style="background-color: yellow;">
             <!-- col-2 -->
             <div class="col-2">2</div>
 
             <!-- col-8 -->
-            <div class="col-8" style="height: 987px;">
-                <div class="card" style="width:523px; height: 523px;">
-                    <!-- There should be an option to upload a photo -->
-                    <!-- I want this function when you click the Picture of the pencil to bring up  the input type file : https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_fileupload_create -->
-                    <img class="card-img-top" src="../resources/images/avatar.png" alt="Card image"
-                        style="width:523px; height:523px;">
-                    <div class="card-img-overlay"> <img id="changeImage" src="../resources/images/edit.png" alt="edit">
+            <div class="col-8" >
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                            <div class="card-img-overlay"> <img id="changeImage" src="../resources/images/edit.png"  style="width:30px; height:30px;" alt="edit">
+                            </div>
+                            <img class="card-img-top" src="../resources/images/avatar.png" alt="Card image"
+                            style="width:inherit; height:inherit;">
+
                     </div>
+                    <div class="col"></div>
+                </div>
 
-                    <div class="card-body">
-                        <!-- make the nameLabel section empty if no name from user -> "" -->
-                        <h4 class="card-title" id="nameLabel" style="text-align: center"> John Doe </h4>
-                        <p class="card-text">
+                <div class="row">
+                    <div class="col">
+                            <h4 class="card-title" id="nameLabel" style="text-align: center"> John Doe </h4>
+                    </div>
+                </div> 
+                <div class="row">
+                    <!-- // Form Starts -->
+                    <div class="col">
 
-                            <form class="was-validated">
-                                <div class="form-group">
+                            <form>
+                                <div>
                                     <!-- Party -->
                                     <div class="form-group">
                                         <label for="partyLabel"> Party: </label>
@@ -149,144 +156,24 @@
                                     </select>
                                     <div class="valid-feedback"></div>
                                 </div>
-                                <button type="button" onclick="saveBtn()" class="btn btn-primary" id="nextBtn"
-                                    style="margin-left: 76%;"> Save </button>
+                                <button type="button" onclick="saveBtn()" class="btn btn-primary" id="nextBtn"> Save </button>
                                 <a href="../Feed/feed.html"> Skip </a>
                             </form>
-                        </p>
-
                     </div>
+                    <!-- // Form ends -->
                 </div>
+
             </div>
 
         <!-- .col-2 -->
         <div class="col-2">2</div>
         </div>
+        <div class="row" style="background-color: green;">12</div>
+
     </div>
     
-    <div class="row">
-            <div class="col-12" style="background-color: green;">12</div>
-    </div>
+
 </body>
 <script src="createProfile.js"></script>
 
 </html>
-<!-- <div class="container">
-    We should name the site
-    <h2> Welcome to Informed Citizen! </h2> --> 
-
-    <!-- <div class="card" style="width:523px; height: 523px;"> -->
-    <!-- There should be an option to upload a photo -->
-    <!-- I want this function when you click the Picture of the pencil to bring up  the input type file : https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_fileupload_create -->
-    <!-- <img class="card-img-top" src="../resources/images/avatar.png" alt="Card image" style="width:523px; height:523px;">  -->
-    <!-- <div class="card-img-overlay"> <img id="changeImage" src="../resources/images/edit.png" alt="edit"> </div> -->
-
-    <!-- <div class="card-body"> -->
-    <!-- make the nameLabel section empty if no name from user -> "" -->
-    <!-- <h4 class="card-title" id="nameLabel" style="text-align: center"> John Doe </h4> -->
-    <!-- <p class="card-text"> -->
-
-    <!-- <form class="was-validated"> -->
-    <!-- <div class="form-group"> -->
-    <!-- Party -->
-    <!-- <div class="form-group"> -->
-    <!-- <label for="partyLabel"> Party: </label> -->
-    <!-- <select name="partySelected" id="party"> -->
-    <!-- <option value="default">-- SELECT A PARTY</option>
-                                    <option value="Republican">Republican</option>
-                                    <option value="Democrat">Democrat</option>
-                                    <option value="Independent">Independent</option> -->
-    <!-- If other there should be a input type text -->
-    <!-- <option value="Other">Other</option>
-                                </select>
-                                <div class="valid-feedback"></div>
-                            </div> -->
-
-    <!-- Age -->
-    <!-- <div class="form-group">
-                                <label for="ageLabel"> Age: </label>
-                                <input type="number" class="form-control" id="age" placeholder="Age" name="age" max="121" min="18">
-                                <div class="valid-feedback"></div>
-                            </div> -->
-
-    <!-- Address -->
-    <!-- <div class="form-group">
-                                <label for="addressLabel"> Address: </label>
-                                <input type="text" class="form-control" id="address" placeholder="Street Address" name="address">
-                                <div class="valid-feedback"></div>
-                            </div> -->
-
-    <!-- ZIP code -->
-    <!-- <div class="form-group">
-                                <label for="zipLabel"> Zip code: </label>
-                                <input type="number" class="form-control" id="zip" placeholder="#####" name="zip">
-                                <div class="valid-feedback"></div>
-                            </div> -->
-
-    <!-- State -->
-    <!-- I want to make a custom css for a green checkmark -->
-    <!-- <label for="stateLabel"> State: </label> -->
-    <!-- <select name="stateSelected" id="state">
-                                <option value="default"> -- SELECT A STATE </option>
-                                <option value="AL">Alabama</option>
-                                <option value="AK">Alaska</option>
-                                <option value="AZ">Arizona</option>
-                                <option value="AR">Arkansas</option>
-                                <option value="CA">California</option>
-                                <option value="CO">Colorado</option>
-                                <option value="CT">Connecticut</option>
-                                <option value="DE">Delaware</option>
-                                <option value="DC">District Of Columbia</option>
-                                <option value="FL">Florida</option>
-                                <option value="GA">Georgia</option>
-                                <option value="HI">Hawaii</option>
-                                <option value="ID">Idaho</option>
-                                <option value="IL">Illinois</option>
-                                <option value="IN">Indiana</option>
-                                <option value="IA">Iowa</option>
-                                <option value="KS">Kansas</option>
-                                <option value="KY">Kentucky</option>
-                                <option value="LA">Louisiana</option>
-                                <option value="ME">Maine</option>
-                                <option value="MD">Maryland</option>
-                                <option value="MA">Massachusetts</option>
-                                <option value="MI">Michigan</option>
-                                <option value="MN">Minnesota</option>
-                                <option value="MS">Mississippi</option>
-                                <option value="MO">Missouri</option>
-                                <option value="MT">Montana</option>
-                                <option value="NE">Nebraska</option>
-                                <option value="NV">Nevada</option>
-                                <option value="NH">New Hampshire</option>
-                                <option value="NJ">New Jersey</option>
-                                <option value="NM">New Mexico</option>
-                                <option value="NY">New York</option>
-                                <option value="NC">North Carolina</option>
-                                <option value="ND">North Dakota</option>
-                                <option value="OH">Ohio</option>
-                                <option value="OK">Oklahoma</option>
-                                <option value="OR">Oregon</option>
-                                <option value="PA">Pennsylvania</option>
-                                <option value="RI">Rhode Island</option>
-                                <option value="SC">South Carolina</option>
-                                <option value="SD">South Dakota</option>
-                                <option value="TN">Tennessee</option>
-                                <option value="TX">Texas</option>
-                                <option value="UT">Utah</option>
-                                <option value="VT">Vermont</option>
-                                <option value="VA">Virginia</option>
-                                <option value="WA">Washington</option>
-                                <option value="WV">West Virginia</option>
-                                <option value="WI">Wisconsin</option>
-                                <option value="WY">Wyoming</option>
-                            </select> -->
-    <!-- <div class="valid-feedback"></div> -->
-    <!-- </div>
-                        <button type="button" onclick="saveBtn()" class="btn btn-primary" id="nextBtn" style="margin-left: 76%;"> Save </button>
-                        <a href="../Feed/feed.html"> Skip </a>
-                    </form> -->
-    <!--                     
-                </p>
-            </div>
-        </div>
-    </div> -->
