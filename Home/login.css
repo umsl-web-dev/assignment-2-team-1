@@ -1,8 +1,8 @@
 h1 {
-    text-align: center;;
+    text-align: center;
 }
 form {
-    margin-top: 30%;
+    margin-top: 18%;
 }
 div img {
     width: 100%;
@@ -10,13 +10,26 @@ div img {
 }
 
 .col-6 {
-    height:600px;
-    color: white;
+    height:554px;
+    color: navy;
 }
 
-.col-12-1 {
-    height:100px
+div .row.brick {
+    background-image: url("../resources/images/peoplerow.jpg"); 
+ 
+    height: 200px;
+
+    background-size: cover;
+    background-position-y: 50%;
+    opacity: 0.7;
+        
 }
+div img {
+    width: 100%;
+    height: fit-content;
+}
+
+
 #signUpLink {
     margin-left: 152px;
     padding-right: 19px;
@@ -27,7 +40,6 @@ div img {
  div .form-group {
     margin-bottom: 2rem;
 }
-
 
 body {
   background: #222;
@@ -41,6 +53,7 @@ div .social {
   top: 50%;
   text-align: center;
   transform: translateY(-50%);
+  padding-top: 23px;
 }
 
 .social .link {
@@ -90,21 +103,27 @@ div .social {
   background-color: #3B5998;
   color: white;
 }
-
-
-
+div img {
+    padding-bottom: 8px;  
+    padding-bottom: 8px;
+}
+.container-fluid {
+    background-image: url("../resources/images/brickwall/brickwall/brickwall.png");
+}
+.btn.btn-primary {
+    margin-left: 88%;
+   
+}
 
 /* 
-.container {
-    margin-top: 12%;
-    
-}
-h1 {
-    padding-bottom: 20px;
-}
-#loginOption {
-    margin-left: 75%;
-}
-#signUpLink {
-    padding-right: 35px;
-} */
+img {
+    filter: gray; 
+    -webkit-filter: grayscale(1); 
+    -webkit-transition: all .8s ease-in-out;  
+}  */
+
+/* div .row.brick:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    } */
