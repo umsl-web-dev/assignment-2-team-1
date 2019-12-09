@@ -73,7 +73,7 @@ document.getElementById("nameLabel").innerHTML=usernameChange;
 };
 
 logoutBtn = () => {
-  window.location.href = '../Home/login.html';
+  window.location.href = '../Login/login.html';
 };
 
 // function openNav() {
