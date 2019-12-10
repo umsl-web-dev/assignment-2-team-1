@@ -9,7 +9,7 @@ div .row.brick {
 
     background-size: cover;
     background-position-y: 50%;
-    opacity: 0.7;
+    /* opacity: 0.7; */
         
 }
 div img {
@@ -41,7 +41,7 @@ div img {
 body {
     background: #222;
     background-size: cover;
-    overflow: hidden;
+    overflow: scroll;
   }
   
   div .social {
