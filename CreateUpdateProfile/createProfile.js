@@ -57,6 +57,11 @@ window.onload = () => {
     text = localStorage.getItem("users");
     obj = JSON.parse(text);
     changeUsername(obj[0].username);
+    if(localStorage.getItem("loggedInProfiles")!==null) {
+      texts=localStorage.getItem("loggedInProfiles");
+      objs = JSON.parse(texts);
+      logoutBtn(objs[0].loggedIn);
+    }
   }
   
 };
@@ -73,7 +78,11 @@ document.getElementById("nameLabel").innerHTML=usernameChange;
 };
 
 logoutBtn = () => {
-  window.location.href = '../Login/login.html';
+let loggedInStatus = objs[0].loggedIn;
+loggedInStatus =false;
+// console.log("status", loggedInStatus);
+// alert("changed page");
+window.location.href = '../Login/login.html';
 };
 
 // function openNav() {

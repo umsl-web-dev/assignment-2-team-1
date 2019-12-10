@@ -10,16 +10,16 @@ onLogin = () => {
     loggedInProfiles = {
       loggedIn: true,
       email: elementEmail,
-      password: elementEmail
+      password: elementPassword
     }
     
     saveToLocalStorage(loggedInProfiles);
     nextPageCreate();
-    clearField();
+    
   } else {
     alert("Incorrect credentials!");
   }
-
+  clearField();
 };
 
 //Can you explain why this doesnt work? Or explain each line?

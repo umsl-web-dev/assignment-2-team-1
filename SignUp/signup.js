@@ -33,17 +33,18 @@ onSubmit = () => {
 
   if (user== true) 
   {
-    const userObj = {
-    username: username,
-    email: email,
-    password: password,
-    user: true
-  };
+      const userObj = {
+      username: username,
+      email: email,
+      password: password,
+      user: true
+    };
   console.log("password confirm",passwordConfirm);
   console.log("password", password);
   
   saveToLocalStorage(userObj);
   alert("Successful!");
+  clearInput(username, email, password, user);
   nextPage();
   } else {
   reloadRedirect();
@@ -81,7 +82,7 @@ localStorage.setItem("users", JSON.stringify(users));
 //Goes to the login page
 nextPage = () => {
 console.log("This is the nextPage");
-window.location.href = '../Home/login.html'
+window.location.href = '../Login/login.html'
 };
 
 reloadRedirect= () => {
