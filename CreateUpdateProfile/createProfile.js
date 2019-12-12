@@ -64,7 +64,7 @@ window.onload = () => {
 //Goes to the feed page--> Alex's Page
 nextPageCreateFeed = () => {
   console.log("This is the nextPage");
-  window.location.href = '../Feed/feed.html'
+  window.location.href = '../WebDesign Assignment 2/Assignment 2.html'
   };
   
 changeUsername = () => {

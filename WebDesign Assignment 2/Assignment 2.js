@@ -14,6 +14,26 @@ let commentArr = new Array();
 	}
 })();
 
+window.onload = () => {
+  //Existing user
+  if (localStorage.getItem("users") !== null) {
+    text = localStorage.getItem("users");
+    obj = JSON.parse(text);
+    changeUsername(obj[0].username);
+  }
+  
+};
+
+changeUsername = () => {
+  usernameChange = obj[0].username;
+  document.getElementById("names").innerHTML=usernameChange;
+  };
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', (params)=> {
 	if(commentArr.length)
 		renderComments();
