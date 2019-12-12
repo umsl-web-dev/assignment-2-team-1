@@ -13,26 +13,157 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title> Sign Up </title>
 </head>
-<body style="background-color: #000000;">
-        <div class="container">
+<!-- style="background-color: #000000;" -->
+<body>
+        <div class="container-fluid" style="background-color: whitesmoke;">
+                <!-- Row 1 col.12 -->
+                <div class="row brick">
+                    <div class="col-12-1"></div>
+                </div>
+        
+                <!-- Row 2 -->
+                <div class="row">
+                    <!-- col.3 -->
+                    <div class="col-3"></div>
+                    <!-- col.6 -->
+                    <div class="col-6">
+                        <h1> Sign Up! </h1>
+                        <p id="requiredPad"> Required <b>*</b></p>
+                        <form class="was-validated" id="formObj">
+                            <!-- Username -->
+                            <div class="form-group">
+                                <label for="uname"> Username: </label>
+                                <input type="text" class="form-control" id="uname" placeholder="Username" name="uname">
+                                <div class="valid-feedback"></div>
+                            </div>
+        
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email"> Email<b>*</b>:</label>
+                                <input type="email" class="form-control" id="email" placeholder="abc@mail.com" name="email"
+                                    required>
+                                <div class="valid-feedback"></div>
+                            </div>
+        
+                            <!-- Password -->
+                            <div class="form-group">
+                                <label for="password"> Password<b>*</b>:</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password" name="password"
+                                    required>
+                                <div class="valid-feedback"></div>
+                            </div>
+                            <!-- Confirm Password -->
+                            <div class="form-group">
+                                <label for="passwordConfirm"> Confirm Password <b>*</b>:</label>
+                                <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm Password"
+                                    name="password" required>
+                                <div class="valid-feedback"></div>
+                            </div>
+        
+                            <br>
+                            <div id="loginOption">
+                                <a href="../Login/login.html" id="existingAcctLink"> Have an account? </a>
+                                <button type="button" onclick="onSubmit()" class="btn btn-primary" id="signUpBtn"> Submit </button>
+        
+                            </div>
+                        </form>
+                    </div>
+                    <!-- col.3 -->
+                    <div class="col-3"></div>
+                
+                </div>
+                  <!-- row 3 col.12 -->
+        <div class="row" style="background-color: #000d81; color:white; height: auto;">
+            <div class="col-12 ">
+                <!-- Footer -->
+                <footer class="page-footer font-small cyan darken-3">
+
+                    <!-- Footer Elements -->
+                    <div class="container">
+
+                        <!-- Grid row-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-md-12 py-5">
+                                <div class="social flex-center">
+
+                                    <!-- Facebook -->
+
+                                    <a href="https://facebook.com/ondrej.p.barta" class="link facebook" target="_parent">
+                                        <span class="fa fa-facebook-square">
+                                            <img src="https://img.icons8.com/ios/50/000000/facebook-f.png">
+                                        </span>
+                                    </a>
+
+                                    </a>
+                                    <!-- Twitter -->
+                                    <a class="tw-ic">
+                                        <a href="https://twitter.com/PageOnlineXS" class="link twitter" target="_parent">
+                                            <span class="fa fa-twitter">
+                                                <img src="https://img.icons8.com/ios/50/000000/twitter.png">
+                                            </span>
+                                        </a>
+                                    </a>
+                                    <!-- Google +-->
+                                    <a class="gplus-ic">
+                                        <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link google-plus" target="_parent">
+                                            <span class="fa fa-google-plus-square">
+                                                <img src="https://img.icons8.com/ios/50/000000/google-logo.png">
+                                            </span>
+                                        </a>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row-->
+
+                    </div>
+                    <!-- Footer Elements -->
+
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3"> © 2019 Copyright:
+                    </div>
+                    <!-- Copyright -->
+
+                </footer>
+                <!-- Footer -->
+            </div>
+        </div>
+                </div>
+                
+            </div>
+       
+</body>
+
+<script src="./signup.js"></script>
+</html>
+
+
+<!-- ORIGINAL CODE -->
+
+<!--  <div class="container">
                 <h1> Sign Up! </h1>
                 <p id="requiredPad"> Required<b>*</b></p>
                 <form class="was-validated" id="formObj">
-                    <!-- Username -->
+                    Username
                     <div class="form-group">
                         <label for="uname"> Username: </label>
                         <input type="text" class="form-control" id="uname" placeholder="Username" name="uname">
                         <div class="valid-feedback"></div>
                     </div>
 
-                    <!-- Email -->
+                    Email
                     <div class="form-group">
                         <label for="email"> Email<b>*</b>:</label>
                         <input type="email" class="form-control" id="email" placeholder="abc@mail.com" name="email" required>
                         <div class="valid-feedback"></div>
                     </div>
         
-                    <!-- Password -->
+                    Password
                     <div class="form-group">
                         <label for="password"> Password<b>*</b>:</label>
                         <input type="password" class="form-control" id="password" placeholder="Password" name="password"  required>
@@ -46,8 +177,4 @@
                     </div>   
                 </form>
             </div>
-        </div>
-</body>
-
-<script src="./signup.js"></script>
-</html>
+        </div> -->

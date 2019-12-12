@@ -51,14 +51,46 @@ saveToLocalStorage = userStorage => {
   localStorage.setItem("usersProfile", JSON.stringify(profile));
 };
 
+saveToLocalStorages = userStorage => {
+  logoutBtn.push(userStorage);
+  localStorage.setItem("loggedIn",JSON.stringify(loggedInData));
+};
+
 window.onload = () => {
   //Existing user
   if (localStorage.getItem("users") !== null) {
     text = localStorage.getItem("users");
     obj = JSON.parse(text);
     changeUsername(obj[0].username);
+    console.log("WINDOW ON LOAD: ", obj[0].username);
   }
-  
+
+  if (localStorage.getItem("loggedInProfiles") !== null) {
+    texts = localStorage.getItem("loggedInProfiles");
+    objs = JSON.parse (texts);
+    // localStorage.setItem("loggedIn", "objs");
+    // changeUserStatus(objs[0].loggedIn);
+    
+    console.log("WINDOW ON LOAD: ", objs[0].loggedIn);
+    // changeUserStatus(objs[0].loggedIn);
+  }
+
+};
+logoutBtn = () => {
+  let user = JSON.parse(localStorage.getItem("loggedInProfiles"))
+  user[0].loggedIn = false;
+
+  localStorage.setItem("loggedInProfiles", JSON.stringify(user))
+  console.log("status when logged out: ", user);
+  alert("changed page");
+  window.location.href = '../Login/login.html';
+
+  return(loggedInData);
+  }
+
+changeUsersStatus = (user) => {
+  let loggedInData = objs[0].loggedIn;
+  saveToLocalStorages(loggedInData);
 };
 
 //Goes to the feed page--> Alex's Page
@@ -68,9 +100,10 @@ nextPageCreateFeed = () => {
   };
   
 changeUsername = () => {
-usernameChange = obj[0].username;
+let usernameChange = obj[0].username;
 document.getElementById("nameLabel").innerHTML=usernameChange;
 };
+
 
 // function openNav() {
 //   document.getElementById("myNav").style.height = "100%";

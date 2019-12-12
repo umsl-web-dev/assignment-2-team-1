@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title> Login </title>
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color: whitesmoke;">
+        <!-- Row 1 col.12 -->
+        <div class="row brick">
+            <div class="col-12-1"></div>
+            <!-- <img src="https://i.ibb.co/GxcDBHv/people.png" alt="people" border="0"> -->
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <!-- col.3 -->
+            <div class="col-3"></div>
+            <!-- col.3 -->
+            <div class="col-6">
+                <form>
+                    <h1> Login </h1>
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email"> Email: </label>
+                        <input type="email" class="form-control" id="email" placeholder="abc@mail.com" name="email" required>
+
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="password"> Password: </label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+                    </div>
+                    <br>
+
+                    <div id="loginOption">
+                        <!-- <a href="../SignUp/signup.html" id="signUpLink" class="btn-block" style="height:0px;"> Don't have an account? </a> -->
+                        <!-- <a href="../Home/login.html" id="existingAcctLink"> Have an account? </a> -->
+                        <a href="../SignUp/signup.html" id="existingAcctLink"> Have an account? </a>
+                        <button type="button" onclick="onLogin()" class="btn btn-primary" id="loginBtn"> Login </button>
+                    </div>
+                </form>
+
+            </div>
+            <!-- col.3 -->
+            <div class="col-3"></div>
+        </div>
+
+
+        <!-- row 3 col.12 -->
+        <div class="row" style="background-color: #000d81; color:white; height: auto;">
+            <div class="col-12 ">
+                <!-- Footer -->
+                <footer class="page-footer font-small cyan darken-3">
+
+                    <!-- Footer Elements -->
+                    <div class="container">
+
+                        <!-- Grid row-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-md-12 py-5">
+                                <div class="social flex-center">
+
+                                    <!-- Facebook -->
+
+                                    <a href="https://facebook.com/ondrej.p.barta" class="link facebook" target="_parent">
+                                        <span class="fa fa-facebook-square">
+                                            <img src="https://img.icons8.com/ios/50/000000/facebook-f.png">
+                                        </span>
+                                    </a>
+
+                                    </a>
+                                    <!-- Twitter -->
+                                    <a class="tw-ic">
+                                        <a href="https://twitter.com/PageOnlineXS" class="link twitter" target="_parent">
+                                            <span class="fa fa-twitter">
+                                                <img src="https://img.icons8.com/ios/50/000000/twitter.png">
+                                            </span>
+                                        </a>
+                                    </a>
+                                    <!-- Google +-->
+                                    <a class="gplus-ic">
+                                        <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link google-plus" target="_parent">
+                                            <span class="fa fa-google-plus-square">
+                                                <img src="https://img.icons8.com/ios/50/000000/google-logo.png">
+                                            </span>
+                                        </a>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row-->
+
+                    </div>
+                    <!-- Footer Elements -->
+
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3"> © 2019 Copyright:
+                    </div>
+                    <!-- Copyright -->
+
+                </footer>
+                <!-- Footer -->
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="./login.js"></script>
+
+</html>
+
+<!-- <p>
+    <div class="col-12 social">
+            <a href="https://facebook.com/ondrej.p.barta" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+            <a href="https://twitter.com/PageOnlineXS" class="link twitter" target="_parent"><span class="fa fa-twitter"></span></a>
+            <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>    
+    </div>
+       
+    Info &#8228; Support &#8228; Marketing <br>
+    Terms of Use &#8228; Privacy Policy <br>
+    @ 2019 Informed Citizen
+</p> -->
+
+<!-- ORIGINAL CODE -->
+<!-- <div class="container">
+        <h1> Login </h1> -->
+<!-- <form> -->
+<!-- Email -->
+<!-- <div class="form-group">
+                <label for="email"> Email: </label>
+                <input type="email" class="form-control" id="email" placeholder="abc@mail.com" name="email" required>
+
+            </div> -->
+
+<!-- Password -->
+<!-- <div class="form-group">
+                <label for="password"> Password: </label>
+                <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+            </div>
+            <br> -->
+<!-- <div id="loginOption">
+                <a href="../SignUp/signup.html" id="signUpLink"> Don't have an account? </a>
+                <button type="button" onclick="onLogin()" class="btn btn-primary" id="loginBtn"> Login </button>
+            </div>
+        </form> -->
+<!-- </div>
+    </div> -->
