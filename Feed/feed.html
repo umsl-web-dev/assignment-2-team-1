@@ -1,18 +1,797 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
-    <title> Informed Citizen </title>
+    <link href="./Feed.css" rel="stylesheet">
+  <title>Home</title>
+  
 </head>
 <body>
     
+    <div class="jumbotron text-center" style="margin-bottom:0" >
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="width: 100%;">
+                    <a class="navbar-brand" style="margin-left: 83%;" href="#"> Home </a>
+        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                      <ul class="navbar-nav">
+                        <li class="nav-item"> <a class="nav-link" href="../CreateUpdateProfile/createProfile.html"> Profile </a> </li>
+                        
+                      </ul>
+                    
+                    </div> 
+                    <button type= "button" onclick="logoutBtn()"> Logout </button>  
+                  </nav>
+
+    <h1>Your State's Representatives</h1>
+        <p>Find Out Who Is Currently Holding Office In Your State</p> 
+      </div>
+    
+      
+      <div class="container" style="margin-top:30px">
+          <div class="row">
+              <div class="col-sm-1.5">
+                <div class="dropdown">
+                  <button class="dropbtn">Alabama</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Kay Ivey (R)</p>
+                    <p>Chief Justice: Lyn Stuart</p>
+                    <p>Senators
+                      <ul>
+                        <li>Richard Shelby (R)</li>
+                        <li>Doug Jones (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>  
+                <div class="dropdown">
+                  <button class="dropbtn">Alaska</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Mike Dunleavy (R)</p>
+                    <p>Chief Justice: Craig Stowers</p>
+                    <p>Senators
+                      <ul>
+                        <li>Lisa Murkowski (R)</li>
+                        <li>Dan Sullivan (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>  
+                <div class="dropdown">
+                  <button class="dropbtn">Arizona</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Doug Ducey (R)</p>
+                    <p>Chief Justice: Scott Bales</p>
+                    <p>Senators
+                      <ul>
+                        <li>Kyrsten Sinema (D)</li>
+                        <li>Martha McSally (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Arkansas</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Asa Hutchinson (R)</p>
+                    <p>Chief Justice: Dan Kemp</p>
+                    <p>Senators
+                      <ul>
+                        <li>John Boozman (R)</li>
+                        <li>Tom Cotton (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>  
+                <div class="dropdown">
+                  <button class="dropbtn">California</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Gavin Newsom (D)</p>
+                    <p>Chief Justice: Tani Cantil-Sakauye</p>
+                    <p>Senators
+                      <ul>
+                        <li>Dianne Feinstein (D)</li>
+                        <li>Kamala Harris (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Colorado</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Jared Polis (D)</p>
+                    <p>Chief Justice: Nancy Rice</p>
+                    <p>Senators
+                      <ul>
+                        <li>Michael Bennet (D)</li>
+                        <li>Cory Gardner (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Connecticut</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Ned Lamont (D)</p>
+                    <p>Chief Justice: Chase Rogers</p>
+                    <p>Senators
+                      <ul>
+                        <li>Richard Blumenthal (D)</li>
+                        <li>Chris Murphy (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Delaware</button>
+                  <div class="dropdown-content">
+                    <p>Governor: John Carney (D)</p>
+                    <p>Chief Justice: Leo E. Strine Jr.</p>
+                    <p>Senators
+                      <ul>
+                        <li>Tom Carper (D)</li>
+                        <li>Chris Coons (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Florida</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Ron DeSantis (R)</p>
+                    <p>Chief Justice: Jorge Labarga</p>
+                    <p>Senators
+                      <ul>
+                        <li>Marco Rubio (R)</li>
+                        <li>Rick Scott (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Georgia</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Brian Kemp (R)</p>
+                    <p>Chief Justice: Harris Hines</p>
+                    <p>Senators
+                      <ul>
+                        <li>Johnny Isakson (R)</li>
+                        <li>David Perdue (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Hawaii</button>
+                  <div class="dropdown-content">
+                    <p>Governor: David Ige (D)</p>
+                    <p>Chief Justice: Mark Recktenwald</p>
+                    <p>Senators
+                      <ul>
+                        <li>Brian Schatz (D)</li>
+                        <li>Mazie Hirono (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Idaho</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Brad Little (R)</p>
+                    <p>Chief Justice: Roger Burdick</p>
+                    <p>Senators
+                      <ul>
+                        <li>Mike Crapo (R)</li>
+                        <li>Jim Risch (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Illinois</button>
+                  <div class="dropdown-content">
+                    <p>Governor: J.B. Pritzker (D)</p>
+                    <p>Chief Justice: Lloyd Karmeier</p>
+                    <p>Senators
+                      <ul>
+                        <li>Dick Durbin (D)</li>
+                        <li>Tammy Duckworth (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Indiana</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Eric Holcomb (R)</p>
+                    <p>Chief Justice: Loretta H. Rush</p>
+                    <p>Senators
+                      <ul>
+                        <li>Todd Young (R)</li>
+                        <li>Mike Braun (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Iowa</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Kim Reynolds (R)</p>
+                    <p>Chief Justice: Mark Cady</p>
+                    <p>Senators
+                      <ul>
+                        <li>Chuck Grassley (R)</li>
+                        <li>Joni Ernst (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Kansas</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Laura Kelly (D)</p>
+                    <p>Chief Justice: Lawton Nuss</p>
+                    <p>Senators
+                      <ul>
+                        <li>Pat Roberts (R)</li>
+                        <li>Jerry Moran (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Kentucky</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Andy Beshear (D)</p>
+                    <p>Chief Justice: John D. Minton Jr.</p>
+                    <p>Senators
+                      <ul>
+                        <li>Mitch McConnell (R)</li>
+                        <li>Rand Paul (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Louisiana</button>
+                  <div class="dropdown-content">
+                    <p>Governor: John Bel Edwards (D)</p>
+                    <p>Chief Justice: Bernette Johnson</p>
+                    <p>Senators
+                      <ul>
+                        <li>Bill Cassidy (R)</li>
+                        <li>John Kennedy (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Maine</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Janet Mills (D)</p>
+                    <p>Chief Justice: Leigh Ingalls Saufley</p>
+                    <p>Senators
+                      <ul>
+                        <li>Susan Collins (R)</li>
+                        <li>Angus King (I)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Maryland</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Larry Hogan (R)</p>
+                    <p>Chief Justice: Mary Ellen Barbera</p>
+                    <p>Senators
+                      <ul>
+                        <li>Ben Cardin (D)</li>
+                        <li>Chris Van Hollen (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Massachusetts</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Charlie Baker (R)</p>
+                    <p>Chief Justice: Ralph D. Gants</p>
+                    <p>Senators
+                      <ul>
+                        <li>Elizabeth Warren (D)</li>
+                        <li>Ed Markey (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Michigan</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Gretchen Whitmer (D)</p>
+                    <p>Chief Justice: Stephen Markman</p>
+                    <p>Senators
+                      <ul>
+                        <li>Debbie Stabenow (D)</li>
+                        <li>Gary Peters (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Minnesota</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Tim Walz (D)</p>
+                    <p>Chief Justice: Lorie Gildea</p>
+                    <p>Senators
+                      <ul>
+                        <li>Amy Klobuchar (D)</li>
+                        <li>Tina Smith (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Mississippi</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Phil Bryant (R)</p>
+                    <p>Chief Justice: William Waller</p>
+                    <p>Senators
+                      <ul>
+                        <li>Roger Wicker (R)</li>
+                        <li>Cindy Hyde-Smith (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Missouri</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Mike Parson (R)</p>
+                    <p>Chief Justice: Zel Fischer</p>
+                    <p>Senators
+                      <ul>
+                        <li>Roy Blunt (R)</li>
+                        <li>Josh Hawley (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Montana</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Steve Bullock (D)</p>
+                    <p>Chief Justice: Mike McGrath</p>
+                    <p>Senators
+                      <ul>
+                        <li>Jon Tester (D)</li>
+                        <li>Steve Daines (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Nebraska</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Pete Ricketts (R)</p>
+                    <p>Chief Justice: Michael Heavican</p>
+                    <p>Senators
+                      <ul>
+                        <li>Deb Fischer (R)</li>
+                        <li>Ben Sasse (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Nevada</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Steve Sisolak (D)</p>
+                    <p>Chief Justice: Lyn Stuart</p>
+                    <p>Senators
+                      <ul>
+                        <li>Catherine Cortez Masto (D)</li>
+                        <li>Jacky Rosen (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">New Hampshire</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Chris Sununu (R)</p>
+                    <p>Chief Justice: Linda Dalianis</p>
+                    <p>Senators
+                      <ul>
+                        <li>Jeanne Shaheen (D)</li>
+                        <li>Maggie Hassan (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">New Jersey</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Phil Murphy (D)</p>
+                    <p>Chief Justice: Stuart Rabner</p>
+                    <p>Senators
+                      <ul>
+                        <li>Bob Menendez (D)</li>
+                        <li>Cory Booker (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">New Mexico</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Michelle Lujan Grisham (D)</p>
+                    <p>Chief Justice: Charles Daniels</p>
+                    <p>Senators
+                      <ul>
+                        <li>Tom Udall (D)</li>
+                        <li>Martin Heinrich (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">New York</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Andrew Cuomo (D)</p>
+                    <p>Chief Justice: Janet DiFiore</p>
+                    <p>Senators
+                      <ul>
+                        <li>Chuck Schumer (D)</li>
+                        <li>Kirsten Gillibrand (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">North Carolina</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Roy Cooper (D)</p>
+                    <p>Chief Justice: Mark Martin</p>
+                    <p>Senators
+                      <ul>
+                        <li>Richard Burr (R)</li>
+                        <li>Thom Tillis (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">North Dakota</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Doug Burgum (R)</p>
+                    <p>Chief Justice: Gerald VandeWalle</p>
+                    <p>Senators
+                      <ul>
+                        <li>John Hoeven (R)</li>
+                        <li>Kevin Cramer (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Ohio</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Mike DeWine (R)</p>
+                    <p>Chief Justice: Maureen O'Connor</p>
+                    <p>Senators
+                      <ul>
+                        <li>Sherrod Brown (D)</li>
+                        <li>Rob Portman (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Oklahoma</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Kevin Stitt (R)</p>
+                    <p>Chief Justice: Douglas L. Combs</p>
+                    <p>Senators
+                      <ul>
+                        <li>Jim Inhofe (R)</li>
+                        <li>James Lankford (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Oregon</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Kate Brown (D)</p>
+                    <p>Chief Justice: Thomas Balmer</p>
+                    <p>Senators
+                      <ul>
+                        <li>Ron Wyden (D)</li>
+                        <li>Jeff Merkley (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Pennsylvania</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Tom Wolf (D)</p>
+                    <p>Chief Justice: Thomas Saylor</p>
+                    <p>Senators
+                      <ul>
+                        <li>Bob Casey Jr. (D)</li>
+                        <li>Pat Toomey (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Rhode Island</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Gina Rainmondo (D)</p>
+                    <p>Chief Justice: Paul Suttell</p>
+                    <p>Senators
+                      <ul>
+                        <li>Jack Reed (D)</li>
+                        <li>Sheldon Whitehouse (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">South Carolina</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Henry McMaster (R)</p>
+                    <p>Chief Justice: Donald Beatty</p>
+                    <p>Senators
+                      <ul>
+                        <li>Lindsey Graham (R)</li>
+                        <li>Tim Scott (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">South Dakota</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Kristi Noem (R)</p>
+                    <p>Chief Justice: David Gilbertson</p>
+                    <p>Senators
+                      <ul>
+                        <li>John Thune (R)</li>
+                        <li>Mike Rounds (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Tennessee</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Bill Lee (R)</p>
+                    <p>Chief Justice: Jeff Bivins</p>
+                    <p>Senators
+                      <ul>
+                        <li>Lamar Alexander (R)</li>
+                        <li>Marsha Blackburn (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Texas</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Greg Abbott (R)</p>
+                    <p>Chief Justice: Sharon Keller</p>
+                    <p>Senators
+                      <ul>
+                        <li>John Cornyn (R)</li>
+                        <li>Ted Cruz (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Utah</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Gary Herbert (R)</p>
+                    <p>Chief Justice: Matthew Durrant</p>
+                    <p>Senators
+                      <ul>
+                        <li>Mike Lee (R)</li>
+                        <li>Mitt Romney (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Vermont</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Phil Scott (R)</p>
+                    <p>Chief Justice: Paul Reiber</p>
+                    <p>Senators
+                      <ul>
+                        <li>Patrick Leahy (D)</li>
+                        <li>Bernie Sanders (I)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Virginia</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Ralph Northam (D)</p>
+                    <p>Chief Justice: Donald Lemons</p>
+                    <p>Senators
+                      <ul>
+                        <li>Mark Warner (D)</li>
+                        <li>Tim Kaine (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Washington</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Jay Inslee (D)</p>
+                    <p>Chief Justice: Barbara Madsen</p>
+                    <p>Senators
+                      <ul>
+                        <li>Patty Murray (D)</li>
+                        <li>Maria Cantwell (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">West Virginia</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Jim Justice (R)</p>
+                    <p>Chief Justice: Allen Loughry</p>
+                    <p>Senators
+                      <ul>
+                        <li>Joe Manchin (D)</li>
+                        <li>Shelley Moore Capito (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Wisconsin</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Tony Evers (D)</p>
+                    <p>Chief Justice: Patience Roggensack</p>
+                    <p>Senators
+                      <ul>
+                        <li>Ron Johnson (R)</li>
+                        <li>Tammy Baldwin (D)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Wyoming</button>
+                  <div class="dropdown-content">
+                    <p>Governor: Mark Gordon (R)</p>
+                    <p>Chief Justice: James Burke</p>
+                    <p>Senators
+                      <ul>
+                        <li>Mike Enzi (R)</li>
+                        <li>John Barrasso (R)</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div> 
+              </div>
+              <br>
+              <br>
+              <br>
+
+
+              <div class="col-sm-8">
+              <h2>Thoughts?</h2>
+              <p>Tell us your ideas. Are they doing a good job?</p>
+              
+              
+	<div style="width: 100%">
+		<div style="display:flex;margin-bottom:10px;">
+			<div>
+        <label id="names">Name</label>
+			</div>
+		</div>
+		<div>
+			<textarea rows="5" id="comment" class="comment-box" placeholder="What do you think?..."></textarea>
+			<div>
+				<button id="add-comment" class="add-btn">Add</button>
+			</div>
+			
+		</div>
+		<h3>Comments:</h3>
+		<ul id="commentsList">
+		</ul>
+	</div>
+         
+      
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row" style="background-color: #000d81; color:white; height: auto;">
+        <div class="col-12 ">
+            <!-- Footer -->
+            <footer class="page-footer font-small cyan darken-3">
+
+                <!-- Footer Elements -->
+                <div class="container">
+
+                    <!-- Grid row-->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12 py-5">
+                            <div class="social flex-center">
+
+                                <!-- Facebook -->
+
+                                <a href="https://facebook.com/ondrej.p.barta" class="link facebook" target="_parent">
+                                    <span class="fa fa-facebook-square">
+                                        <img src="https://img.icons8.com/ios/50/000000/facebook-f.png">
+                                    </span>
+                                </a>
+
+                                </a>
+                                <!-- Twitter -->
+                                <a class="tw-ic">
+                                    <a href="https://twitter.com/PageOnlineXS" class="link twitter" target="_parent">
+                                        <span class="fa fa-twitter">
+                                            <img src="https://img.icons8.com/ios/50/000000/twitter.png">
+                                        </span>
+                                    </a>
+                                </a>
+                                <!-- Google +-->
+                                <a class="gplus-ic">
+                                    <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link google-plus" target="_parent">
+                                        <span class="fa fa-google-plus-square">
+                                            <img src="https://img.icons8.com/ios/50/000000/google-logo.png">
+                                        </span>
+                                    </a>
+                                </a>
+
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row-->
+
+                </div>
+                <!-- Footer Elements -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3"> © 2019 Copyright:
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+        </div>
+    </div>
+      
+
+
+
+
+
+
 </body>
+<script src="./Feed.js"></script>
+
 </html>
