@@ -1,3 +1,13 @@
+.jumbotron{
+  color: white;
+  position: relative;
+  padding:0;
+  margin-top:70px;
+  background: #000d81;
+  margin-top: 23px;
+  text-align:center;
+  margin-bottom: 0;
+}
 
   .dropbtn {
 background-color: #000d81;
@@ -32,12 +42,54 @@ display: block;
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: goldenrod;}
+.dropdown:hover .dropbtn {background-color: #dc3545;}
 
+
+ul {
+  list-style-type: none;
+}
+
+.comment-box {
+	width: 500px;
+	height: 50px;
+	font-size:15px;
+}
+
+.add-btn {
+	width: 80px;
+    font-size: 15px;
+    background-color: #000d81;
+    color: white;
+}
+
+.comment-names {
+	color:blue;
+	margin-top:20px;
+	
+}
+
+.name-names {
+	width: 200px;
+	height: 30px;
+	font-size: 15px;
+}
+
+.hr{
+	color:rgba(0,0,0,0.15);
+	width:600px;
+}
+
+.comment-header {
+	display:flex;width:50%;justify-content:space-between;
+}
+
+.comment-input-row {
+	display:flex;margin-top:20px;margin-bottom:10px;
+}
 
 
 body {
-    background: #c8be8d;
+    background: #b1bae1;
     background-size: cover;
     overflow: scroll;
   }

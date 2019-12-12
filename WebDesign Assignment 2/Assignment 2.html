@@ -14,13 +14,14 @@
 </head>
 <body>
     
-    <div class="jumbotron text-center" style="margin-bottom:0">
+    <div class="jumbotron text-center" style="margin-bottom:0" >
     
     <h1>Your State's Representatives</h1>
         <p>Find Out Who Is Currently Holding Office In Your State</p> 
       </div>
-      
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    
+
+      <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -697,25 +698,32 @@
               <br>
               <br>
               <br>
+
+
               <div class="col-sm-8">
               <h2>Thoughts?</h2>
               <p>Tell us your ideas. Are they doing a good job?</p>
-              <form>
-                <textarea id="words" rows="5" cols="100">Enter comment</textarea>
-<input type="button" onclick="getwords()" value="Enter" /> <br>
-<p id="demo"></p>
-<p id="para"></p> 
-
-                
-              </form>
-         
-                
-            
-
-
-
-
               
+              
+	<div style="width: 100%">
+		<div style="display:flex;margin-bottom:10px;">
+			<div>
+				<input type="text" placeholder="Name & Party" id="names" class="name-names"/>
+			</div>
+		</div>
+		<div>
+			<textarea rows="5" id="comment" class="comment-box" placeholder="What do you think?..."></textarea>
+			<div>
+				<button id="add-comment" class="add-btn">Add</button>
+			</div>
+			
+		</div>
+		<h3>Comments:</h3>
+		<ul id="commentsList">
+		</ul>
+	</div>
+         
+      
               </div>
           </div>
         </div>
