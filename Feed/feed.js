@@ -135,20 +135,22 @@ let renderComment = (comment) => {
 	let listElem = `
 			<div class="hr"><hr/></div>
 			<li id="comment-${id}" style="max-width:600px;">
-		 	<div class="comment-header">
-				<div  class="comment-names">
+			<div>
+            <img src="../resources/images/avatar.png" class="mr-3 mt-3 rounded-circle" style="width:60px; border-style:solid"
+</div>
+		 	<div class="comment-header" >
+				<div  class="comment-names" style="font-size: 20px;">
 					${comment.names}
 				</div>
-				<div style="color:rgba(0,0,0,0.3);margin-top:20px;">
-					posted ${timeAgo(comment.lastUpdated)}
+				<div style="font-size: 18px; color:rgba(0,0,0,0.3);margin-top:20px; margin-right: 29%;"> posted ${timeAgo(comment.lastUpdated)}
 				</div>
 			</div> 
 			<div>
 			 ${comment.content}
 			</div>
 			<div>
-				${comment.upvotes} <a href="#" role="button" id="upvotes-${id}">Upvotes</a>
-				${comment.downvotes} <a href="#" role="button" id="downvotes-${id}">Downvote</a>
+				${comment.upvotes} <a href="#" role="button" style="padding-right: 10px;" id="upvotes-${id}">Upvotes</a>
+				${comment.downvotes} <a href="#" role="button" style="padding-right: 10px;" id="downvotes-${id}">Downvote</a>
 				<a href="#" role="button" id="reply-${id}">Reply</a>
 			</div>`;
 	if(comment.childrenIds.length != 0) {

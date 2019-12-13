@@ -33,13 +33,13 @@ a {
     margin-left: 17px;
 } */
 
-/* .col-8 {
-    padding-left: 198.5px;
-    padding-right: 204.5px;
-} */
+.col-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 body {
-    background: #222;
+    /* background: #222; */
     background-size: cover;
     overflow: scroll;
   }
@@ -118,7 +118,9 @@ button.float-right {
 }
 a.navbar-brand {
     border-right: solid;
+    color: #004085;
     padding-right: 13px;
     padding-left: 10px;
 };
+
 

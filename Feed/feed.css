@@ -86,10 +86,15 @@
   .comment-input-row {
       display:flex;margin-top:20px;margin-bottom:10px;
   }
-  
+  a.navbar-brand {
+    border-right: solid;
+    color: #004085;
+    padding-right: 13px;
+    padding-left: 10px;
+};
   
   body {
-      background: #b1bae1;
+      background: white;
       background-size: cover;
       overflow: scroll;
     }
@@ -160,3 +165,6 @@
       margin-top: -53px;
   }
   
+.rounded-circle {
+  border-radius: 100%!important;
+}
