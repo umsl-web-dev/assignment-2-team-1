@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,106 +11,76 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   
+
     <title> PoliTalk </title>
 </head>
 
 <body>
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-            <header class="masthead mb-auto">
-                    
-                      <div class="row" >
-                            <div class="col-12">
-                                    <nav class="navbar navbar-expand-sm bg-light navbar-light " style="width: 100%;">
-                                            <h3 class="masthead-brand">PoliTalk</h3>    
-                                        <a class="navbar-brand" style="margin-left: 81%; color: #004085;" href="../Home/home.html"> Home </a>
-                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                                              <span class="navbar-toggler-icon"></span>
-                                            </button>
-                                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                                              <ul class="navbar-nav">
-                                                <!-- <li class="nav-item"> <button type= "button" onclick="logoutBtn()"> Logout </button> </li> -->
-                                                <li class="nav-item"> <a href="../CreateUpdateProfile/createProfile.html"></a> My Profile </li>
-                                              </ul>
-                                            </div>  
-                                          </nav>
-                                
-                            </div>
-                        </div>
-                    
-            </header>
+   
+    <div class="row">
+        <div class="col-12 overlay"> 
+            <nav>
+                <ul style=" list-style-type: none; ">
+                 <li style="display: inline; padding-right: 14px; color:white;" onclick="loginLink();">   <b>Login |</b> </li>
+                 <li style="display: inline;"> <a href="../SignUp/signup.html" style="color:white;"> <b> No account? </b></a> </li>
+                </ul>
             
-               <main role="main" class="inner cover" style="text-align:center;">
-                    <h1 class="cover-heading">Cover your page.</h1>
-                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-                    <p class="lead">
-                      <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-                    </p>
-            </main>  
-            
-           
+            </nav>
+         </div>
     </div>
-    <div class="row" style="background-color: #000d81; color:white; height: auto; padding-top: 10px;">
-            <div class="col-12 ">
-                <!-- Footer -->
-                <footer class="page-footer font-small cyan darken-3">
-
-                    <!-- Footer Elements -->
-                    <div class="container">
-
-                        <!-- Grid row-->
-                        <div class="row">
-
-                            <!-- Grid column -->
-                            <div class="col-md-12 py-5">
-                                <div class="social flex-center">
-
-                                    <!-- Facebook -->
-
-                                    <a href="https://facebook.com/ondrej.p.barta" class="link facebook" target="_parent">
-                                        <span class="fa fa-facebook-square">
-                                            <img src="https://img.icons8.com/ios/50/000000/facebook-f.png">
-                                        </span>
-                                    </a>
-
-                                    </a>
-                                    <!-- Twitter -->
-                                    <a class="tw-ic">
-                                        <a href="https://twitter.com/PageOnlineXS" class="link twitter" target="_parent">
-                                            <span class="fa fa-twitter">
-                                                <img src="https://img.icons8.com/ios/50/000000/twitter.png">
-                                            </span>
-                                        </a>
-                                    </a>
-                                    <!-- Google +-->
-                                    <a class="gplus-ic">
-                                        <a href="https://plus.google.com/+OndřejBárta-Otaku" class="link google-plus" target="_parent">
-                                            <span class="fa fa-google-plus-square">
-                                                <img src="https://img.icons8.com/ios/50/000000/google-logo.png">
-                                            </span>
-                                        </a>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <!-- Grid column -->
-
-                        </div>
-                        <!-- Grid row-->
-
-                    </div>
-                    <!-- Footer Elements -->
-
-                    <!-- Copyright -->
-                    <div class="footer-copyright text-center py-3"> © 2019 Copyright:
-                    </div>
-                    <!-- Copyright -->
-
-                </footer>
-                <!-- Footer -->
-            </div>
-        </div>
+         <div class="row">
+            <div class="col">
+                <div class="col-sm-12" style="width:100%; height:100%;">
+                    
+                    <!-- The video -->
+                    <video autoplay muted loop id="myVideo">
+                        <source src="../resources/videos/Pexels Videos 2675511.mp4" type="video/mp4">
+                    </video>
+                </div>
+               
+                <!-- Optional: some overlay text to describe the video -->
+                <div class="content text-center">
+                    <h1>Welcome to Politalk!</h1>
+                    <p> Do you know what people in your state think about their political representation?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Learn More </button> 
+                </div> <!-- content end-->
     
+    <!-- The Modal -->
+                <div class="modal fade  " id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title"> Learn More </h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p> 
+            Politalk is a social platform where you healthy dialog
+            about local state politics is valued.Find out what
+            the people in your community think about their 
+            local politicans.
+              </p>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+            </div>
+         </div>
+         <!--col end-->
+    
+
+
 </body>
 <script src="./home.js"></script>
+
 </html>
